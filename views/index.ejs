@@ -2,22 +2,12 @@
 
 <!--contents goes here-->
 <div class="container">
-<div class="jumbotron">
-        <h1 class="display-4"><%= title%></h1>
-        <% if(title == "Contact") { %> 
-          <a class="btn btn-primary" href="/contact-list" role="button">Contact List</a>
-        <% } %>
+  <br />
+  <img class="pic" src="/Assests/Images/Nik.jpg" /> <br />
+  <h1>Welcome to Nikesh Patel's Portfolio</h1>
+  <h5>"Seeking works so that I can be proud of what I have accomplished."</h5>
 
-         <% if(title == "Favourites") { %> 
-          <a class="btn btn-primary" href="/favourite-things" role="button">Favourite Things</a>
-        <% } %>
-       
-      </div>
+  <a class="btn btn-primary" href="/about" role="button">About Me</a>
 </div>
 
-
-
- 
 <%include ./partials/footer.ejs %>
-
-
