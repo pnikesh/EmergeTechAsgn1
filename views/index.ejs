@@ -1,0 +1,23 @@
+<%include ./partials/header.ejs %>
+
+<!--contents goes here-->
+<div class="container">
+<div class="jumbotron">
+        <h1 class="display-4"><%= title%></h1>
+        <% if(title == "Contact") { %> 
+          <a class="btn btn-primary" href="/contact-list" role="button">Contact List</a>
+        <% } %>
+
+         <% if(title == "Favourites") { %> 
+          <a class="btn btn-primary" href="/favourite-things" role="button">Favourite Things</a>
+        <% } %>
+       
+      </div>
+</div>
+
+
+
+ 
+<%include ./partials/footer.ejs %>
+
+
