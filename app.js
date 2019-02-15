@@ -20,7 +20,7 @@ mongoDB.once("open", () => {
 //route setup
 let indexRouter = require("./routes/index");
 //let usersRouter = require('./routes/users');
-let contactRouter = require("./routes/contact");
+//let contactRouter = require("./routes/contact");
 let favouriteRouter = require("./routes/favourite");
 //let aboutMeRouter = require("./routes/about");
 let app = express();
@@ -38,7 +38,7 @@ app.use(express.static(path.join(__dirname, "node_modules")));
 
 app.use("/", indexRouter);
 //app.use('/users', usersRouter);
-app.use("/contact-list", contactRouter);
+//app.use("/contact-list", contactRouter);
 app.use("/favourite-things", favouriteRouter);
 ////app.use("/about-me", aboutMeRouter);
 
