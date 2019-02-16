@@ -99,3 +99,15 @@ h4 {
   align-content: center;
   margin-top: 100px;
 }
+
+.serviceImg {
+  width: 400px;
+  height: 200px;
+}
+
+/*.line {
+  width: fit-content;
+  height: 47px;
+  border-bottom: 1px solid black;
+  position: absolute;
+}*/

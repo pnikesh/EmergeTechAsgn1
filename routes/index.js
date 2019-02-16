@@ -18,7 +18,7 @@ router.get("/projects", (req, res, next) => {
 });
 
 router.get("/services", (req, res, next) => {
-  res.render("index", { title: "Services" });
+  res.render("service", { title: "Services" });
 });
 
 module.exports = router;
