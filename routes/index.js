@@ -14,7 +14,7 @@ router.get("/contact", (req, res, next) => {
   res.render("contact", { title: "Contact Me" });
 });
 router.get("/projects", (req, res, next) => {
-  res.render("index", { title: "Projects" });
+  res.render("project", { title: "Projects" });
 });
 
 router.get("/services", (req, res, next) => {
