@@ -1,4 +1,10 @@
 //configuration for databse
+/*
+ config/db.js
+ Nikesh Patel
+ 300970071
+Feb 16, 2019 */
+
 module.exports = {
   //local mongo db deployment
   URI: "mongodb://localhost/asgn1"
