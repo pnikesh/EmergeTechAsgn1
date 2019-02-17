@@ -1,3 +1,9 @@
+/*
+ model/message.js
+ Nikesh Patel
+ 300970071
+Feb 16, 2019 */
+
 let mongoose = require("mongoose");
 
 //create model class

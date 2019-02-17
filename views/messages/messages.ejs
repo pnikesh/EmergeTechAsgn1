@@ -1,3 +1,8 @@
+<!-- 
+ message.ejs
+ Nikesh Patel
+ 300970071
+Feb 16, 2019 -->
 <%include ../partials/header.ejs %>
 
 <!--contents goes here-->
@@ -25,16 +30,20 @@
         <% for(let count = 0; count < messageList.length; count++) { %>
         <tr>
           <td class="text-center">
-            <%= messageList[count].first_name %>
+            <%= messageList[count].firstname %>
           </td>
           <td class="text-center">
-            <%= messageList[count].last_name %>
+            <%= messageList[count].lastname %>
           </td>
           <td class="text-center">
-            <%= messageList[count].age %>
+            <%= messageList[count].email %>
           </td>
-
-          
+          <td class="text-center">
+            <%= messageList[count].num %>
+          </td>
+          <td class="text-center">
+            <%= messageList[count].subject %>
+          </td>
 
           <td class="text-center">
             <a

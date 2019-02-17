@@ -1,26 +1,30 @@
+/*
+ routes/message.js
+ Nikesh Patel
+ 300970071
+Feb 16, 2019 */
 let express = require("express");
 let router = express.Router();
 
 let messageModel = require("../models/message");
 
 //GET - to read msgs
-
 router.get("/", (req, res, next) => {
   messageModel.find((err, messageList) => {
     if (err) {
       return console.error(err);
     } else {
-      res.render("messages/messages", {
-        title: "User From Messages",
-        messages: messageList
+      res.render("../views/messages/messages", {
+        title: "Messages from Users",
+        messageList: messageList
       });
     }
   });
 });
 
-// POST = to add msgs
+// POST - to add msgs
 router.post("/", (req, res, next) => {
-  //Creating a new Modle object
+  
   let newMessage = messageModel({
     "firstname": req.body.fname,
     "lastname": req.body.lname,
