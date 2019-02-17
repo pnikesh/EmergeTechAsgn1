@@ -23,11 +23,11 @@ router.get("/", (req, res, next) => {
 });
 
 // POST - to add msgs
-router.post("/message", (req, res, next) => {
-  
+router.post("/", (req, res, next) => {
+  console.log("dsfdsf");
   let newMessage = messageModel({
-    "firstname": req.body.fname,
-    "lastname": req.body.lname,
+    "firstname": req.body.firstname,
+    "lastname": req.body.lastname,
     "email": req.body.email,
     "num": req.body.num,
     "subject": req.body.subject
